@@ -31,7 +31,17 @@ a {
 }
 
 /* component styling  */
-
+.parent {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.children {
+  color: red;
+  text-align: center;
+  background-color: #333;
+  margin: 25px;
+  padding: 25px;
+}
 
 
 
