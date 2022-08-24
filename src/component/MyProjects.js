@@ -3,7 +3,7 @@ import React from 'react'
 export default function MyProjects() {
     return (
         <div>
-            <p style={{color: "red"}}>
+            <p className='.bodyComponent'>
                 Projects
             </p>
         </div>

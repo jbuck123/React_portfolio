@@ -3,9 +3,9 @@ import React from 'react'
 export default function AboutMe() {
     return (
         <div>
-            <p style={{color: "red"}}>
+            <h3 style={{marginTop: '600px'}}>
                 about me
-            </p>
+            </h3>
         </div>
     )
 } 
