@@ -1,19 +1,62 @@
 import React from 'react'
 
 export default function Contact() {
+
     return (
       <div className='container'>
         <form>
           <label for="fname">First Name</label>
-          <input type={"text"} id="fname" name="firstname"></input>
+          <input   type={"text"} id="firstName" name="firstName"></input>
 
-          <label for="lname">Last Name</label>
-          <input type={"text"} id="lname" name="lastname"></input>
+          <label for="email">Email</label>
+
+          <input  type={"text"} id="email" name="email"></input>
 
           <label for="subject">Leave a Message</label>
-          <textarea id='subject' name="subject" placeholder='Write something... ' style={{height:"200px"}}></textarea>
+          <textarea   id='subject' name="subject" placeholder='Write something... ' style={{height:"200px"}}></textarea>
           <input type={"submit"} value="Submit"></input>
         </form>
       </div>
     );
 } 
+
+
+
+
+
+
+
+
+
+
+// CODE I CAN USE FOR LATER FUTURE DEVELOPEMENT 
+
+
+// const [fName, setFirstName] = useState('');
+
+
+
+// const handleFormSubmit = (event) => {
+
+// }
+// const handleFnameChange = (event) => {
+// setfName(event.target.value)
+// }
+// // const handleEmailChange
+
+// // this is the dr
+// const [formData, setFormData] = useState({
+// firstName: "",
+// email: '',
+// subject:''
+// })
+
+// const handleInputChange = (event) => {
+//   setFormData({
+//     ...formData,
+//     [event.target.name]: event.target.value
+//   });
+// };
+// // eventually I will add a graphqL and make this a full stack application
+// another thing I want to add is a login ... basically create an admin login that will allow me to see form submissions
+// for now this can just be refrences to use later
