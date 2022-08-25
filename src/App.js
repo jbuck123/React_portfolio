@@ -45,7 +45,7 @@ function App() {
         {contactForm && <Contact />}
       </body>
       <footer>
-        
+
       </footer>
     </div>
   );

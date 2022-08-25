@@ -30,7 +30,7 @@ a {
  font-family: 'didot';
 }
 
-/* component styling  */
+/* project styling  */
 .parent {
   display: grid;
   grid-template-columns: 25% 50% 25%;
@@ -74,6 +74,9 @@ input[type=submit]:hover {
   padding: 20px;
   box-shadow: 0 0 25px 0 black;
 }
+
+
+
 
 
 
