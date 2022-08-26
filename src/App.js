@@ -5,6 +5,7 @@ import MyProjects from "./component/MyProjects";
 import Contact from "./component/Contact";
 import AboutMe from './component/AboutMe';
 import Resume from "./component/Resume";
+import Clock from "./component/Clock"
 import './App.css';
 
 
@@ -14,44 +15,41 @@ import './App.css';
 
 
 function App() {
-  const [aboutMe, setAboutMe] = useState(false);
-
-  const aboutMeClick = (event) => {
-    //toggle shown state
-    setAboutMe((current) => !current);
-  };
-  const [myProjects, setMyProjects] = useState(false);
-
-  const projectClick = (event) => {
-    //toggle shown state
-    setMyProjects((current) => !current);
-  };
-
-  const [contactForm, setContact] = useState(false);
-
-  const contactClick = (event) => {
-    setContact((current) => !current);
-  };
-  const [resume, setResume] = useState(false);
-
-  const resumeClick = (event) => {
-    setResume((current) => !current);
-  };
+  const homePage = ( 
+    <div>
+    <h1>About Me</h1>
+    
+    <img className='aboutMePicture' src='images/About_me.jpeg' alt='Blue Ribbon Pines Disc Golf Course'></img>
+ </div>
+  )
+  const [page, setPage] = useState(homePage)
+  const handleClick = (event) => {
+    setPage(event.target.dataset.page)
+    console.log(event.target.dataset)
+  }
+  // handlePage = () => {
+  //   switch(page) {
+  //     case "aboutMe": 
+  //         return <AboutMe/>
+  //     case 
+  //   }
+  // }
   return (
     <div>
       <header className="header">
         <h1>James Buchmann</h1>
-        <a onClick={aboutMeClick}>About Me</a>
-        <a onClick={projectClick}>My Projects</a>
-        <a onClick={contactClick}>Contact Me</a>
-        <a onClick={resumeClick}>Resume</a>
+        <a onClick={handleClick} data-page="aboutMe" >About Me</a>
+        <a onClick={handleClick} data-page="projects">My Projects</a>
+        <a onClick={handleClick} data-page="contact" >Contact Me</a>
+        <a onClick={handleClick} data-page="resume" >Resume</a>
       </header>
       <body className="bodyComponents">
         {/*show component on click */}
-        {aboutMe && <AboutMe />}
-        {myProjects && <MyProjects />}
-        {contactForm && <Contact />}
-        {resume && <Resume/>}
+        {page === "aboutMe" && <AboutMe />}
+        {page === "projects" && <MyProjects />}
+        {page === "contact"&& <Contact />}
+        {page === "resume"&& <Resume/>}
+
       </body>
       <footer>
         <a href="google.com">
@@ -69,3 +67,39 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+// old code 
+
+
+// const [aboutMe, setAboutMe] = useState(false);
+
+//   const aboutMeClick = (event) => {
+//     //toggle shown state
+//     setAboutMe((current) => !current);
+    
+//   };
+//   const [myProjects, setMyProjects] = useState(false);
+
+//   const projectClick = (event) => {
+//     //toggle shown state
+//     setMyProjects((current) => !current);
+//   };
+
+//   const [contactForm, setContact] = useState(false);
+
+//   const contactClick = (event) => {
+//     setContact((current) => !current);
+//   };
+//   const [resume, setResume] = useState(false);
+
+//   const resumeClick = (event) => {
+//     setResume((current) => !current);
+//   };
+
+
+
+
