@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import MyProjects from "./component/MyProjects";
 import Contact from "./component/Contact";
 import AboutMe from './component/AboutMe';
+import Resume from "./component/Resume";
 import './App.css';
 
 
@@ -25,10 +26,16 @@ function App() {
     //toggle shown state
     setMyProjects((current) => !current);
   };
+
   const [contactForm, setContact] = useState(false);
 
   const contactClick = (event) => {
     setContact((current) => !current);
+  };
+  const [resume, setResume] = useState(false);
+
+  const resumeClick = (event) => {
+    setResume((current) => !current);
   };
   return (
     <div>
@@ -37,12 +44,14 @@ function App() {
         <a onClick={aboutMeClick}>About Me</a>
         <a onClick={projectClick}>My Projects</a>
         <a onClick={contactClick}>Contact Me</a>
+        <a onClick={resumeClick}>Resume</a>
       </header>
       <body className="bodyComponents">
         {/*show component on click */}
         {aboutMe && <AboutMe />}
         {myProjects && <MyProjects />}
         {contactForm && <Contact />}
+        {resume && <Resume/>}
       </body>
       <footer>
 

@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Contact() {
 
+
     return (
       <div className='container'>
         <form>
@@ -18,6 +19,8 @@ export default function Contact() {
         </form>
       </div>
     );
+
+    
 } 
 
 
@@ -37,6 +40,11 @@ export default function Contact() {
 
 
 // const handleFormSubmit = (event) => {
+//   event.preventDefault();
+//   // I will need to set up a schemas with resolvers and typeDefs
+//   // also can create UTILS to for mutation (create)
+//   // and a UTIL file for Query(get)
+//   const [addUser, ()] = useMutation
 
 // }
 // const handleFnameChange = (event) => {
