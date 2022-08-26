@@ -5,7 +5,7 @@ export default function AboutMe() {
         <div>
            <h1>About Me</h1>
            
-           <img src='images/About_me.jpeg' alt='Blue Ribbon Pines Disc Golf Course'></img>
+           <img className='aboutMePicture' src='images/About_me.jpeg' alt='Blue Ribbon Pines Disc Golf Course'></img>
         </div>
     )
 } 

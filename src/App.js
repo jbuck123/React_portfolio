@@ -54,7 +54,15 @@ function App() {
         {resume && <Resume/>}
       </body>
       <footer>
-
+        <a href="google.com">
+          <img src="Logos/linkedin.png" alt="Linkiden logo" className="logo"></img>
+        </a>
+        <a href="google.com">
+          <img src="Logos/github.jpg" alt="github logo" className="logo"></img>
+        </a>
+        <a href="google.com">
+          <img src="Logos/gmail.png" alt="gmail logo" className="logo"></img>
+        </a>
       </footer>
     </div>
   );
