@@ -77,26 +77,25 @@ input[type=submit]:hover {
 
 /* footer styling  */
 
-footer {
-
-  text-align: center;
-  padding: 3px;
+footer{
   background-color: #3333;
   color: white;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
+  height: 150px;
+}
+.footer-content {
   box-shadow: 0 0 25px 0 black;
-
 }
-
-.logo {
-  width: 90px;
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
   height: 80px;
+
 }
-.logo:hover {
-  background-color: yellow;
-}
+
+/* this is in the project page */
 
 .scheduler {
   height: 270px;
@@ -133,8 +132,10 @@ font-weight: 400;
 .aboutMeText {
   font-size: 2rem;
   color: black;
-  line-height: 5rem;
+  line-height: 3rem;
   margin-bottom: 5rem;
 }
+
+
 
 

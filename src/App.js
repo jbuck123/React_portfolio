@@ -15,52 +15,80 @@ import './App.css';
 
 
 function App() {
-  const homePage = ( 
+  const homePage = (
     <div>
-    <h1>About Me</h1>
-    
-    <img className='aboutMePicture' src='images/About_me.jpeg' alt='Blue Ribbon Pines Disc Golf Course'></img>
- </div>
-  )
-  const [page, setPage] = useState(homePage)
+      <h1>About Me</h1>
+
+      <img
+        className="aboutMePicture"
+        src="images/About_me.jpeg"
+        alt="Blue Ribbon Pines Disc Golf Course"
+      ></img>
+    </div>
+  );
+  const [page, setPage] = useState(homePage);
   const handleClick = (event) => {
-    setPage(event.target.dataset.page)
-    console.log(event.target.dataset)
-  }
+    setPage(event.target.dataset.page);
+    console.log(event.target.dataset);
+  };
   // handlePage = () => {
   //   switch(page) {
-  //     case "aboutMe": 
+  //     case "aboutMe":
   //         return <AboutMe/>
-  //     case 
+  //     case
   //   }
   // }
   return (
     <div>
       <header className="header">
         <h1>James Buchmann</h1>
-        <a onClick={handleClick} data-page="aboutMe" >About Me</a>
-        <a onClick={handleClick} data-page="projects">My Projects</a>
-        <a onClick={handleClick} data-page="contact" >Contact Me</a>
-        <a onClick={handleClick} data-page="resume" >Resume</a>
+        <a onClick={handleClick} data-page="aboutMe">
+          About Me
+        </a>
+        <a onClick={handleClick} data-page="projects">
+          My Projects
+        </a>
+        <a onClick={handleClick} data-page="contact">
+          Contact Me
+        </a>
+        <a onClick={handleClick} data-page="resume">
+          Resume
+        </a>
       </header>
       <body className="bodyComponents">
         {/*show component on click */}
         {page === "aboutMe" && <AboutMe />}
         {page === "projects" && <MyProjects />}
-        {page === "contact"&& <Contact />}
-        {page === "resume"&& <Resume/>}
-
+        {page === "contact" && <Contact />}
+        {page === "resume" && <Resume />}
       </body>
       <footer>
-        <a href="google.com">
-          <img src="Logos/linkedin.png" alt="Linkiden logo" className="logo"></img>
-        </a>
-        <a href="google.com">
-          <img src="Logos/github.jpg" alt="github logo" className="logo"></img>
-        </a>
-        <a href="google.com">
-          <img src="Logos/gmail.png" alt="gmail logo" className="logo"></img>
-        </a>
+        <div className="footer-content">
+          <div className="links">
+            <a href="google.com">
+              <img
+                src="Logos/link.png"
+                alt="Linkiden logo"
+                className="logo"
+              ></img>
+            </a>
+            <a href="google.com">
+              <img
+                src="Logos/GitHub_Logo.png"
+                alt="github logo"
+                className="logo"
+              ></img>
+            </a>
+            <a href="google.com">
+              <img
+                src="Logos/gmail.png"
+                alt="gmail logo"
+                className="logo"
+              ></img>
+            </a>
+          </div>
+        </div>
+        <div className="footer-bottom"></div>
       </footer>
     </div>
   );
@@ -70,35 +98,6 @@ export default App;
 
 
 
-
-
-// old code 
-
-
-// const [aboutMe, setAboutMe] = useState(false);
-
-//   const aboutMeClick = (event) => {
-//     //toggle shown state
-//     setAboutMe((current) => !current);
-    
-//   };
-//   const [myProjects, setMyProjects] = useState(false);
-
-//   const projectClick = (event) => {
-//     //toggle shown state
-//     setMyProjects((current) => !current);
-//   };
-
-//   const [contactForm, setContact] = useState(false);
-
-//   const contactClick = (event) => {
-//     setContact((current) => !current);
-//   };
-//   const [resume, setResume] = useState(false);
-
-//   const resumeClick = (event) => {
-//     setResume((current) => !current);
-//   };
 
 
 
