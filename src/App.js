@@ -2,7 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, {useState} from 'react';
 import MyProjects from "./component/MyProjects";
-import Contact from "./component/Contact";
+
 import AboutMe from './component/AboutMe';
 import Resume from "./component/Resume";
 import Clock from "./component/Clock"
@@ -31,13 +31,7 @@ function App() {
     setPage(event.target.dataset.page);
     console.log(event.target.dataset);
   };
-  // handlePage = () => {
-  //   switch(page) {
-  //     case "aboutMe":
-  //         return <AboutMe/>
-  //     case
-  //   }
-  // }
+
   return (
     <div>
       <header className="header">
@@ -48,9 +42,7 @@ function App() {
         <a onClick={handleClick} data-page="projects">
           My Projects
         </a>
-        <a onClick={handleClick} data-page="contact">
-          Contact Me
-        </a>
+
         <a onClick={handleClick} data-page="resume">
           Resume
         </a>
@@ -59,11 +51,11 @@ function App() {
         {/*show component on click */}
         {page === "aboutMe" && <AboutMe />}
         {page === "projects" && <MyProjects />}
-        {page === "contact" && <Contact />}
+       
         {page === "resume" && <Resume />}
       </body>
       <footer>
-        <div className="footer-content">
+        <div className="wrapper">
           <div className="links">
             <a href="google.com">
               <img
