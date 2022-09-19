@@ -5,7 +5,7 @@ import MyProjects from "./component/MyProjects";
 
 import AboutMe from './component/AboutMe';
 import Resume from "./component/Resume";
-import Clock from "./component/Clock"
+
 import './App.css';
 
 
@@ -47,6 +47,7 @@ function App() {
           Resume
         </a>
       </header>
+      
       <body className="bodyComponents">
         {/*show component on click */}
         {page === "aboutMe" && <AboutMe />}
