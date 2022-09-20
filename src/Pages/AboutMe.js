@@ -5,12 +5,16 @@ export default function AboutMe() {
       <div className="aboutmeContainer">
         <h1 className="name">James Buchmann</h1>
         <h2 className="title">Web Developer</h2>
-        <div className="aboutImage">
-          <img
-            src="https://picsum.photos/200/300?grayscale"
+      <div className='about-me-photo'>
+      <img
+            src="./images/Aboutme.jpeg"
             alt="photo of me"
-          ></img>
-        </div>
+            
+            ></img>
+      </div>
+      <p className='photo-context'>(Happy guy in the white shirt)</p>  
+     
+      
         <p className="aboutMeText">
           Hello! I am new to web development and coding in general. I was a
           carpenter with a passion for tech dating back to early childhood.
