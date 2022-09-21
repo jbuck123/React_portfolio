@@ -10,6 +10,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(background_image.jpg) ;
 }
 
 code {
@@ -101,14 +102,22 @@ footer{
   width: 480px
 }
 /* about me page styling */
+.about-me-content {
 
-.aboutmeContainer{
-  margin: auto;
-  width: 50%;
-  border: 3px solid #333;
-  padding: 10px;
-
+  
 }
+
+.aboutmeContainer-left{
+width: 20%;
+  float: left;
+}
+
+.aboutmeContainer-right{
+  width: 80%;
+
+  float: right;
+}
+
 .name {
 color: #0091B0;
 font-size: 6rem;  
@@ -121,13 +130,13 @@ margin-bottom: 2rem;
   color: #0091B0;
 font-size: 3rem;
 font-weight: 400;
-text-align: center;
+
 
 }
 
 .about-me-photo {
 display: flex;
-justify-content: center;
+
 margin-bottom: 0px;
 
 }
@@ -138,11 +147,13 @@ img{
 }
 .photo-context {
 text-align: center;
+color: #0091B0;
+
 }
 
 .aboutMeText {
   font-size: 2rem;
-  color: black;
+  color: #0091B0;
   line-height: 3rem;
   margin-bottom: 5rem;
   text-align: center;
