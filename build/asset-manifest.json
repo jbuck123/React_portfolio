@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React_Portfolio/static/css/main.52f3c4cf.css",
-    "main.js": "/React_Portfolio/static/js/main.4a7cf955.js",
-    "static/js/787.28cb0dcd.chunk.js": "/React_Portfolio/static/js/787.28cb0dcd.chunk.js",
-    "static/media/background.jpg": "/React_Portfolio/static/media/background.d0da984dfd6b1dd5378c.jpg",
-    "static/media/Gamr.png": "/React_Portfolio/static/media/Gamr.2d4c5247a31311e4bb77.png",
-    "static/media/tomatoes.gif": "/React_Portfolio/static/media/tomatoes.7897e72470d7420f0fcc.gif",
-    "static/media/noteTaker.png": "/React_Portfolio/static/media/noteTaker.8caad2d9b5e5df941c2e.png",
-    "static/media/scheduler.png": "/React_Portfolio/static/media/scheduler.de0613dbfda15b4187de.png",
-    "index.html": "/React_Portfolio/index.html",
-    "main.52f3c4cf.css.map": "/React_Portfolio/static/css/main.52f3c4cf.css.map",
-    "main.4a7cf955.js.map": "/React_Portfolio/static/js/main.4a7cf955.js.map",
-    "787.28cb0dcd.chunk.js.map": "/React_Portfolio/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/React_portfolio/static/css/main.e710011d.css",
+    "main.js": "/React_portfolio/static/js/main.e550a70b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/React_portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/background.jpg": "/React_portfolio/static/media/background.d0da984dfd6b1dd5378c.jpg",
+    "static/media/Gamr.png": "/React_portfolio/static/media/Gamr.2d4c5247a31311e4bb77.png",
+    "static/media/tomatoes.gif": "/React_portfolio/static/media/tomatoes.7897e72470d7420f0fcc.gif",
+    "static/media/noteTaker.png": "/React_portfolio/static/media/noteTaker.8caad2d9b5e5df941c2e.png",
+    "static/media/scheduler.png": "/React_portfolio/static/media/scheduler.de0613dbfda15b4187de.png",
+    "index.html": "/React_portfolio/index.html",
+    "main.e710011d.css.map": "/React_portfolio/static/css/main.e710011d.css.map",
+    "main.e550a70b.js.map": "/React_portfolio/static/js/main.e550a70b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/React_portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52f3c4cf.css",
-    "static/js/main.4a7cf955.js"
+    "static/css/main.e710011d.css",
+    "static/js/main.e550a70b.js"
   ]
 }
