@@ -8,6 +8,7 @@ import AboutMe from "./Pages/AboutMe"
 import Header from './component/Header'
 import Projects from "./Pages/Projects";
 import ContactMe from "./Pages/ContactMe"
+import ProjectDisplay from "./Pages/ProjectDisplay"
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Routes>
         <Route path="/" element={<AboutMe ></AboutMe>}></Route>
         <Route path="/Projects" element={<Projects />}></Route>
+        <Route path="/Projects/:id" element={<ProjectDisplay />}></Route>
         <Route path="/ContactMe" element={<ContactMe />}></Route>
         </Routes>
     
