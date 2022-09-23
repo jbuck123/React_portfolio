@@ -6,8 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // page imports
-import MyProjects from './Pages/MyProjects';
-import Resume from './Pages/Resume'
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

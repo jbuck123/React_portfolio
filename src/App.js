@@ -6,8 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route} from "react-router-dom"
 import AboutMe from "./Pages/AboutMe"
 import Header from './component/Header'
-import MyProjects from "./Pages/MyProjects";
-import Resume from "./Pages/Resume"
+import Projects from "./Pages/Projects";
+import ContactMe from "./Pages/ContactMe"
+
 
 
 
@@ -21,11 +22,11 @@ import Resume from "./Pages/Resume"
 function App() {
   return (
     <div>
-    <Header />
+          <Header />
         <Routes>
         <Route path="/" element={<AboutMe ></AboutMe>}></Route>
-        <Route path="/Projects" element={<MyProjects />}></Route>
-        <Route path="/Resume" element={<Resume />}></Route>
+        <Route path="/Projects" element={<Projects />}></Route>
+        <Route path="/ContactMe" element={<ContactMe />}></Route>
         </Routes>
     
     </div>

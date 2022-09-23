@@ -4,24 +4,20 @@ import { NavLink } from "react-router-dom";
 function Header(props) {
   return (
     <header >
-      {props.user ? (
-        <nav id="navStyle">
+    
+        <nav className="navbar">
           {/* <img id="logoPic" src={logo} alt="logo" /> */}
-          <span className="centerText">Welcome, {props.user.email}
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/logout">Log Out</NavLink>
-          </span>
-        </nav>
-      ) : (
-        <nav id="navStyle">
-          {/* <img id="logoPic" src={logo} alt="logo" /> */}
-          <div className="centerText">
-          <NavLink to="/">Home</NavLink> | {""}
-          <NavLink to="/Projects">Projects</NavLink> | {""}
-          <NavLink to="/Resume">Resume</NavLink>
+          <div className="navLinks">
+          <NavLink className={"link"} to="/">Home</NavLink> 
+          </div>
+          <div className="navLinks">
+          <NavLink className={"link"} to="/Projects">Projects</NavLink>
+          </div>
+          <div className="navLinks">
+          <NavLink className={"link"} to="/Resume">Resume</NavLink>
           </div>
         </nav>
-      )}
+
     </header>
   );
 }

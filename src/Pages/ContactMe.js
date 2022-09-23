@@ -1,9 +1,6 @@
 import React from 'react'
 
-export default function Resume() {
-    
-     
-   
+export default function ContactMe() {
     return (
         <div>
            <h1>My resume</h1>
