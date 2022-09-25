@@ -12,8 +12,8 @@ function ProjectDisplay() {
         <img src={project.image} />
         <p>{project.Skills}</p>
         <p>{project.gituhb}</p>
-        <a href={project.github} className="btn btn-info"> GitHub Repository</a>
-        <GitHubIcon />
+        <a href={project.github} ><GitHubIcon /> </a>
+       
     </div>
 
     // parameter is coming from the URL. 
