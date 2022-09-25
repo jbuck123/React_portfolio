@@ -2,6 +2,7 @@ import React from "react"
 import { useParams} from "react-router-dom"
 import { ProjectList } from "../helpers/ProjectList"
 import GitHubIcon from "@material-ui/icons/GitHub"
+import { Link } from 'react-router-dom'
 
 function ProjectDisplay() {
     const { id } = useParams();
@@ -10,6 +11,8 @@ function ProjectDisplay() {
         <h1>{project.name}</h1>
         <img src={project.image} />
         <p>{project.Skills}</p>
+        <p>{project.gituhb}</p>
+        <a href={project.github} className="btn btn-info"> GitHub Repository</a>
         <GitHubIcon />
     </div>
 

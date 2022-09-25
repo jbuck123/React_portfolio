@@ -14,7 +14,7 @@ function Header(props) {
           <NavLink className={"link"} to="/Projects">Projects</NavLink>
           </div>
           <div className="navLinks">
-          <NavLink className={"link"} to="/Resume">Resume</NavLink>
+          <NavLink className={"link"} to="/Resume">Contact Me</NavLink>
           </div>
         </nav>
 
