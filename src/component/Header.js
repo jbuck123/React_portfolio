@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 export default function Header() {
-  const settings = ["Home", "About Me", "Education", "Projects", "Contact Me"];
+  const settings = ["Home", "About Me", "Skills", "Education", "Projects", "Contact Me"];
   
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 

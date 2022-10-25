@@ -4,6 +4,7 @@ import React from 'react'
 import Home from "../component/Home"
 import AboutMe from "../component/AboutMe"
 import Skills from '../component/Skills'
+import Education from '../component/Education'
 
 export default function HomePage() {
 
@@ -12,6 +13,7 @@ export default function HomePage() {
             <Home />
             <AboutMe />
             <Skills />
+            <Education />
         </div>
     )
 }
