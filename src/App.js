@@ -4,11 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // import MyProjects from "./Pages/MyProjects";
 import { Routes, Route} from "react-router-dom"
-import AboutMe from "./Pages/AboutMe"
+import HomePage from "./Pages/HomePage"
 import Header from './component/Header'
-import Projects from "./Pages/Projects";
-import ContactMe from "./Pages/ContactMe"
-import ProjectDisplay from "./Pages/ProjectDisplay"
+
 
 
 
@@ -25,10 +23,7 @@ function App() {
     <div>
           <Header />
         <Routes>
-        <Route path="/" element={<AboutMe ></AboutMe>}></Route>
-        <Route path="/Projects" element={<Projects />}></Route>
-        <Route path="/Projects/:id" element={<ProjectDisplay />}></Route>
-        <Route path="/ContactMe" element={<ContactMe />}></Route>
+        <Route path="/React_portfolio" element={<HomePage />}></Route>
         </Routes>
     
     </div>

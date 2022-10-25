@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 html, body { height: 100% }
 body {
@@ -17,217 +18,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
-
-
-/* NAV LINK STYLING */
-
-.navbar {
-display: flex;
-
-}
-
-.navLinks,
-a {
-  justify-content: center;
-  margin-left: 4rem;
-  margin-right: 4rem;
-
-}
-
-.link{
-  text-decoration: none;
-}
-.link:hover {
-  color: #E27D60;
-}
-
-
-
-
-/* project styling  */
-.projects {
-  width: 100%;
-  height: auto;
+/* MAIN CONTAINER */
+.flex-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
-.projects .projectTitle {
-  text-align: center;
-  color: #3e497a;
-  font-size: 60px;
-  font-weight: bolder;
+
+
+
+/* HOME STYLIN */
+
+.child-container{
+  background-color: red;
+  width: 100%;
+ padding: 10px;
+ margin-top: 10px;
 }
 
-.projectList {
-  width: 70vw;
-  height: auto;
+
+/* SKILLS STYLING */
+i {
+  font-size: 50px;
+  text-align: center;
+}
+.grid-container {
+  display: inline-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
-
-/* MENU ITEM STYLING */
-
-.projectItem {
-  border-radius: 15px;
-  width: 300px;
-  height: 300px;
-  margin: 40px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-.projectItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-
-.projectItem .bgImage {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 100%;
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.projectItem h1 {
-  font-size: 25px;
-}
-
-@media only screen and (max-width: 1300px) {
-  .projectList {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .projectList {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .projectList {
-    width: 100%;
-  }
-  .projectItem {
-    width: 300px;
-    height: 300px;
-  }
-}
-
-
-
-
-
-/* PROJECT DISPLAY CSS STYLING  */
-
-
-
-.project {
-  width: 100%;
-  height: calc(100vh - 100px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.project h1 {
-  margin-top: 50px;
-  color: #123C69;
-  font-size: 35px;
-}
-.project img {
-  width: 700px;
-  border-radius: 10px;
-}
-
-.project p {
-  font-size: 40px;
-  color: #123C69;
-}
-
-.project svg {
-  font-size: 60px;
-  color: #123C69;
-}
-
-
-/* this is in the project page */
-
-.scheduler {
-  height: 270px;
-  width: 480px
-}
-/* about me page styling */
-
-.aboutmeContainer-left {
-  display: block;
-}
-
-
-
-
-
-/* HOME PAGE STYLING */
-
-.name {
-color: #123C69;
-font-size: 6rem;  
-font-weight: 450;
-letter-spacing: 4px;
-margin-bottom: 2rem; 
-text-align: center;
-}
-
-.title {
-  color: #123C69;
-font-size: 3rem;
-font-weight: 400;
-text-align: center;
-padding-bottom: 1rem;
-
-
-}
-
-.about-me-photo {
-display: flex;
-
-justify-content: center;
-
-}
-img{
-  
-  height: 350px;
-  width: 250px;
-  -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
-}
-.photo-context {
-
-font-size: xx-small;
-color: black;
-text-align: center;
-
-
-}
-
-.aboutMeText {
-  font-size: 2rem;
-  color: #123C69;
-  line-height: 3rem;
-  margin-bottom: 5rem;
-  text-align: center;
-  padding: 20px;
-}
-
-
-
-
-
