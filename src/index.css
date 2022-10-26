@@ -14,7 +14,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* MAIN CONTAINER */
+
+/* FONTS */
+@font-face {
+  font-family: 'BebasNeue';
+  src: local('BebasNeue'), url(./assets/Fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+/* @font-face {
+  font-family: 'Trispace-Thin';
+  src: local('Trispace-Thin') url(./assets/Fonts/Trispace-Thin.ttf) format('truetype');
+} */
+
+
+/* Page */
 .flex-container {
   display: flex;
   justify-content: center;
@@ -24,7 +36,7 @@ code {
 
 
 
-/* HOME STYLIN */
+/*Child CARDS*/
 
 .child-container{
   background-color: rgb(6, 6, 15);
@@ -39,11 +51,31 @@ border-radius: 15px;
 border-color: rgb(28, 28, 28);
 }
 
-
+/* HOME STYLING */
+.home-padding {
+  /* padding: 50px; */
+  margin: 10rem;
+}
+.home-title{
+  font-family: BebasNeue, serif;
+  font-size: 70px;
+  color: red;
+}
+.home-subtitle {
+padding-bottom: 20px;
+}
+.home-links{
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
 /* SKILLS STYLING */
 i {
   font-size: 50px;
   text-align: center;
+  padding: 5px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .grid-container {
   display: inline-grid;
