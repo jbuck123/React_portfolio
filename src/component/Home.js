@@ -25,7 +25,7 @@ export default function Home() {
           <Stack spacing={2} direction="row">
             <Button target='_blank' href="https://github.com/jbuck123" variant="outlined">GitHub</Button>
             <Button target='_blank' href="https://www.linkedin.com/in/james-buchmann-b82b76225/" variant="outlined">LinkedIn</Button>
-            <Button target='_blank' href="https://github.com/jbuck123" variant="outlined">Blog</Button>
+            <Button target='_blank' href="https://jamesbuchmanndev.blogspot.com/" variant="outlined">Blog</Button>
           </Stack>
         </div>
       </div>
