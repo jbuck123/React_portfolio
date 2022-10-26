@@ -11,6 +11,7 @@ import Profile from "../assets/profile-pic.png";
 import Menu from '@mui/material/Menu';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { color } from "@mui/system";
 
 
 export default function Header() {
@@ -25,13 +26,13 @@ export default function Header() {
     setAnchorElUser(null);
   };
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1,}}>
+      <AppBar position="static" sx={{bgcolor: 'rgb(51,51,51)'}}>
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <FingerprintIcon />
+                <FingerprintIcon sx={{ color: "rgba(230, 255, 110, 0.9)" }}/>
               </IconButton>
             </Tooltip>
             <Menu
@@ -63,7 +64,7 @@ export default function Header() {
           </Typography> */}
           <Avatar
             alt="Remy Sharp"
-            variant="square"
+          
             sx={{ width: 76, height: 76 }}
             src={Profile}
           />

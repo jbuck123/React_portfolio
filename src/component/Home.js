@@ -12,7 +12,7 @@ export default function Home() {
       <Avatar
         alt="Remy Sharp"
         variant="square"
-        sx={{ width: 76, height: 76 }}
+        sx={{ width: 120, height: 120 }}
         src={Profile}
       />
       <h1>hello world</h1>

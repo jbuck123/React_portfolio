@@ -1,11 +1,9 @@
-// import logo from './logo.svg';
-import "bootstrap/dist/css/bootstrap.min.css";
-// import { Outlet,  } from "react-router-dom"
 
-// import MyProjects from "./Pages/MyProjects";
+
 import { Routes, Route} from "react-router-dom"
 import HomePage from "./Pages/HomePage"
 import Header from './component/Header'
+import Zoom from 'react-reveal/Zoom'; // Importing Zoom effect
 
 
 
@@ -21,10 +19,13 @@ import Header from './component/Header'
 function App() {
   return (
     <div>
-          <Header />
+
+
+        <Header />
         <Routes>
         <Route path="/React_portfolio" element={<HomePage />}></Route>
         </Routes>
+
     
     </div>
   )
