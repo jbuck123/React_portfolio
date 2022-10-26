@@ -13,6 +13,7 @@ export default function Education() {
             <p>Minor: Spanish</p>
             <p>Participated in research that focused on Dieting and Self Esteem</p>
             <h3>University of Minnesota: Full-Stack Web Development </h3>
+            
         </div>
     )
 }

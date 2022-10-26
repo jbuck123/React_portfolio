@@ -5,6 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import Profile from "../assets/profile-pic.png";
 
@@ -27,12 +28,15 @@ export default function Header() {
   };
   return (
     <Box sx={{ flexGrow: 1,}}>
-      <AppBar position="static" sx={{bgcolor: 'rgb(51,51,51)'}}>
-        <Toolbar>
+      <AppBar position="static" sx={{bgcolor: 'rgb(0, 0, 0)'}}>
+        <Toolbar style={{
+          paddingTop: '5px',
+          paddingBottom: '5px'
+        }} >
           <Box sx={{ flexGrow: 1 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <FingerprintIcon sx={{ color: "rgba(230, 255, 110, 0.9)" }}/>
+                <FingerprintIcon sx={{ color: "rgba(230, 255, 110, 0.9)", width: '30px', height: '30px' }}/>
               </IconButton>
             </Tooltip>
             <Menu

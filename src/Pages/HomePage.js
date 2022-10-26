@@ -2,7 +2,7 @@ import React from 'react'
 
 // Importing Zoom effect
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+
 
 // components
 import Home from "../component/Home"
@@ -19,9 +19,10 @@ export default function HomePage() {
             <Fade>
             <Home />
             <AboutMe />
-            <Skills />
             <Education />
+            <Skills />
             <Projects />
+            <Contact />
             </Fade>
         </div>
     )
