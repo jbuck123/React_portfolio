@@ -1,30 +1,31 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
-html, body { height: 100% }
+html,
+body {
+  height: 100%;
+}
 body {
   margin: 0;
   background-color: rgb(0, 0, 0);
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 /* FONTS */
 @font-face {
-  font-family: 'BebasNeue';
-  src: local('BebasNeue'), url(./assets/Fonts/BebasNeue-Regular.ttf) format('truetype');
+  font-family: "BebasNeue";
+  src: local("BebasNeue"),
+    url(./assets/Fonts/BebasNeue-Regular.ttf) format("truetype");
 }
 /* @font-face {
   font-family: 'Trispace-Thin';
   src: local('Trispace-Thin') url(./assets/Fonts/Trispace-Thin.ttf) format('truetype');
 } */
-
 
 /* Page */
 .flex-container {
@@ -34,21 +35,19 @@ code {
   background-color: rgb(0, 0, 0);
 }
 
-
-
 /*Child CARDS*/
 
-.child-container{
+.child-container {
   background-color: rgb(6, 6, 15);
   color: white;
 
- padding: 10px;
-margin-right: 30px;
-margin-left: 30px;
-margin-top: 10px;
-border-style: solid;
-border-radius: 15px;
-border-color: rgb(28, 28, 28);
+  padding: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(28, 28, 28);
 }
 
 /* HOME STYLING */
@@ -56,18 +55,56 @@ border-color: rgb(28, 28, 28);
   /* padding: 50px; */
   margin: 10rem;
 }
-.home-title{
+.home-title {
   font-family: BebasNeue, serif;
   font-size: 70px;
   color: red;
 }
 .home-subtitle {
-padding-bottom: 20px;
+  padding-bottom: 20px;
 }
-.home-links{
+.home-links {
   padding-top: 40px;
   padding-bottom: 25px;
 }
+
+/* ABOUT ME STYLING / MOBILE FIRST  / GRID CONTAINER */
+.aboutme-container {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  background-color: rgb(6, 6, 15);
+  color: white;
+  padding: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(28, 28, 28);
+}
+.aboutme-title {
+  justify-content: center;
+  font-family: BebasNeue, serif;
+  font-size: 70px;
+  color: red;
+}
+
+.aboutme-picture {
+  border-radius: 8px;
+  height: 475px;
+  width: auto;
+}
+.aboutme-content {
+margin: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+/* .aboutme-text {
+
+  padding-bottom: 5px;
+} */
+
 /* SKILLS STYLING */
 i {
   font-size: 50px;
@@ -84,12 +121,37 @@ i {
   padding: 10px;
 }
 
-
-
-
 /* MEDIA QUERIES */
+
+/* PHONES */
+
 @media only screen and (max-width: 600px) {
-  .home-padding{
+  .home-padding {
     margin: 0px;
+    padding-bottom: 6rem;
+    padding-top: 6.5rem;
   }
+
+
+
+
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .home-padding {
+    margin: 80px;
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
