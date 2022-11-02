@@ -100,10 +100,35 @@ margin: 10px;
   text-align: center;
   line-height: 25px;
 }
-/* .aboutme-text {
+/* EDUCATION STYLING */
+.grid-collumn-container {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  background-color: rgb(6, 6, 15);
+  color: white;
+  padding: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: rgb(28, 28, 28);
+}
+.education-title {
+  justify-content: center;
+  font-family: BebasNeue, serif;
+  font-size: 70px;
+  color: red;
+}
+.education-container {
+  margin: 25px;
+}
+.button {
 
-  padding-bottom: 5px;
-} */
+  padding-top: 15px;
+  
+}
 
 /* SKILLS STYLING */
 i {

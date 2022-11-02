@@ -1,19 +1,45 @@
-import React from 'react'
-
+import React from "react";
+import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 export default function Education() {
+  return (
+    <div className="grid-collumn-container">
+      <h1 className="education-title">Education</h1>
+      <div className="education-container">
+        <h3> Saint Cloud Technical and Community College</h3>
+        <p> Associates degree </p>
+        <p>2017 - 2019</p>
 
-    return (
-        <div className='child-container'>
-            <h1>Education</h1>
-            <h3> Saint Cloud Technical and Community College</h3>
-            <p> Graduated in 2 years with my generals</p>
-            <p>Transfered to the University of Minnesota Twin Cities</p>
-            <h3>University of Minnesota</h3>
-            <p>Major: Psychology</p>
-            <p>Minor: Spanish</p>
-            <p>Participated in research that focused on Dieting and Self Esteem</p>
-            <h3>University of Minnesota: Full-Stack Web Development </h3>
-            
+        <div className="button">
+          <Button
+            size="small"
+            target="_blank"
+            href="https://www.sctcc.edu/"
+            className="button"
+            variant="outlined"
+          >
+            School Website
+          </Button>
         </div>
-    )
+      </div>
+      <div className="education-container">
+        <h3>University of Minnesota</h3>
+        <p>Major: Psychology</p>
+        <p>Minor: Spanish</p>
+        <p>Web Development Certificate (Coding Boot Camp)</p>
+        <p>2019-2021</p>
+        <div className="button">
+          <Button
+            size="small"
+            target="_blank"
+            href="https://twin-cities.umn.edu/"
+            className="button"
+            variant="outlined"
+          >
+            School Website
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
 }
